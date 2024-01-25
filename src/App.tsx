@@ -9,7 +9,7 @@ import { NotesLocalStorageKey, SortingEnums } from "./enums/enums";
 const App = () => {
   const [notesData, setNotesData] = useState<INotesData[]>(
     JSON.parse(
-      LocalstorageService(NotesLocalStorageKey.KEY, undefined, "get") ?? ""
+      LocalstorageService(NotesLocalStorageKey.KEY, undefined, "get") ?? "[]"
     )
   );
   const [sortBy, setSortBy] = useState(SortingEnums.LATEST_ON_TOP);
