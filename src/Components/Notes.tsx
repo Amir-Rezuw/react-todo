@@ -1,4 +1,4 @@
-import { Fragment, memo } from "react";
+import { Fragment } from "react";
 import { INotesData } from "../Interfaces/interfaces";
 import Cart from "./Cart";
 import NotesStatus from "./NotesStatus";
@@ -28,4 +28,4 @@ const Notes = ({
   );
 };
 
-export default memo(Notes);
+export default Notes;

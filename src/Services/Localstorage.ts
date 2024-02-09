@@ -1,4 +1,4 @@
-export const LocalstorageService = <T>(
+export const LocalStorageService = <T>(
   key: string,
   value: T,
   type: "set" | "get"

@@ -27,8 +27,7 @@ const AddNoteForm = ({
   return (
     <form
       className="flex-1 p-4 w-80"
-      onSubmit={addNote}
-    >
+      onSubmit={addNote}>
       <h2 className="font-semibold">Add a new note</h2>
       <input
         className="my-2 mx-0 w-full p-2 rounded-xl h-11"

@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { INotesData } from "../Interfaces/interfaces";
 
 const NotesStatus = ({ notes }: { notes: INotesData[] }) => {
@@ -33,4 +32,4 @@ const NotesStatus = ({ notes }: { notes: INotesData[] }) => {
   );
 };
 
-export default memo(NotesStatus);
+export default NotesStatus;

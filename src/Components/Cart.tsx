@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { INotesData } from "../Interfaces/interfaces";
 const Cart = ({
   data,
@@ -14,16 +13,18 @@ const Cart = ({
     <div className="shadow-lg bg-white p-4 rounded-xl mt-5">
       <div className="flex justify-between items-center border-b border-primary-100 pb-2">
         <div className="flex flex-col text-left">
-          <h5 className={`font-semibold ${completed && "line-through"}`}>
+          <h5
+            className={`font-semibold ${completed && "line-through"}`}
+            data-testid="title-element">
             {title}
           </h5>
           <p className="text-text-400">{description}</p>
         </div>
         <div className="flex items-center">
           <button
+            data-testid="delete-todo"
             className="cursor-pointer"
-            onClick={() => onDeleteNote(id)}
-          >
+            onClick={() => onDeleteNote(id)}>
             <img
               height={20}
               width={20}
@@ -56,4 +57,4 @@ const Cart = ({
   );
 };
 
-export default memo(Cart);
+export default Cart;
